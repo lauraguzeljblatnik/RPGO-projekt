@@ -1,0 +1,13 @@
+Parametric b-spline cubic curves:
+
+"Pred tem primerno definirati b-splinese - mejbi se doda kkšna primerjava med bezier/bspline -> je v tistem powerpointu k j Laura poslala"
+
+1.Definiramo Pi(xi,yi) in R(t) k je nek aproximation prek b-splineov.
+
+2.Pokaževa primer kako ni očitno iz oblike poligona kakšne karakteristike bo imela krivulja -> to bi se dost dal verjetno sprogramirat -> Ideja od tu naprej:
+Kako pa bi potem karakteriziral da bi se to vn vidl?
+
+3. izpeljava S, C, D, L, N -> poveva da je ta klasifikacija troublesome ker nočeš cusps, loops or unexpected inflexion pointov na (37) aka R(t) 
+-> želja je vidt shape of the curve direkt iz polinoma -> dodava pogoje
+
+Lemmo sam napiševa potem imava pa dve trditvi ki se uporabita zato da imamo novo klasifikacijo in potem dve posledici -> Easy money 
