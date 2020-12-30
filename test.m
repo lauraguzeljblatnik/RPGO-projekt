@@ -1,4 +1,5 @@
-rng(1) % Set random seed for reproductility
+%test bspline
+
 q=2;
 %1.15 cusp
 %0.6 loop
@@ -17,5 +18,6 @@ XY= [ 1 q+1;
     1.5 0.15];
 BS3=BSpline(XY,'order',4);
 h=plot(XY(:,1),XY(:,2),'-o',BS3(:,1),BS3(:,2),'--');
+saveas(gcf,'bprevoj.png')
 %legend('Reference data (knots)','2^{nd} order Bspline','3^{rd} order Bspline','2^{nd} order periodic Bspline')
 %set(h, 'LineWidth',2)

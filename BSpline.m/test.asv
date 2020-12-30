@@ -1,8 +1,0 @@
-rng(1) % Set random seed for reproductility
-XY=(); % Random set of 5 points in 2D
-BS2=BSpline(XY);
-BS3=BSpline(XY,'order',3);
-BSper=BSpline(XY,'periodic',true);
-h=plot(XY(:,1),XY(:,2),'-o',BS3(:,1),BS3(:,2),'--');
-%legend('Reference data (knots)','2^{nd} order Bspline','3^{rd} order Bspline','2^{nd} order periodic Bspline')
-;set(h, 'LineWidth',2)
