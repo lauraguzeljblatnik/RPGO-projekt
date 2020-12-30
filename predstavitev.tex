@@ -190,9 +190,39 @@ Označimo:
 \end{frame}
 
 \section{B-zlepki}
-\begin{frame}{B-zlepki}
+\begin{frame}{Zlepki}
+	\begin{itemize}
+		\item Motivacija: natančnost nočemo zvišati preko višanja stopnje temveč preko zlepkov - celotno območje razdelimo na več območji
+	\end{itemize}
+	\begin{definicija}
+	Zlepek reda n je sestavljen iz polinomov stopnje n-1 v spremenjlivki x. Vrednosti x, kjer se polinomi srečajo imenujemo vozli, označimo jih z $t_0, t_1, t_2,...,t_n$ in uredimo v nepadajočem vrstnem redu. \\
+	Če so vsi vozli različni imamo zvezne odvode n-2 reda med vsemi polinomi. V kolikor je r vozlov enakih imamo zagotovljeno le n-r-1 zvezno odvedljivost. 
+	\end{definicija}
 	
 \end{frame}
+
+\begin{frame}{Uvod v B-zlepke}
+	B-zlepki reda n so bazne funkcije za zlepke istega reda, definirane na istih vozlih. 
+	\begin{trditev}
+	Rekurzivna formula za B-zlepke:\\
+ 	$B_{i,0}(x) =
+  	\begin{cases}
+    		1 & \text{; $t_i \le x \le t_{i+1}$} \\
+    		0 & \text{;sicer}
+  	\end{cases}$
+	
+	$B_{i,k}(x)= \frac{x-t_i}{t_{i+k}-t_i} B_{i,k-1}(x) +  \frac{t_{i+k+1}-x}{t_{i+k+1}-t_{i+1}} B_{i+1,k-1}(x) $
+
+	
+ 
+
+	\end{trditev}
+	Naj bo $P_i(x_i,y_i)$, $i=0,1,...,n$ sekvenca točk s parametrom t. Parametrična aproksimacija preko B-zlepkov: $$ R(t) = (x(t),y(t)) = \sum_{i=0}^n P_i B_{i-2,3} (t)$$ 
+Poligonu $P_0,P_1,...,P_n$ pravimo kontrolni poligon. 
+	
+\end{frame}
+
+
 
 \begin{frame}{Primer}
 	\begin{columns}[t]
@@ -209,21 +239,10 @@ Označimo:
 	\end{columns}
 \end{frame}
 
-\section{B-zlepki}
-\begin{frame}{Uvod v B-zlepke}
-	B-zlepki reda n so bazne funkcije za "spline functions" istega reda, definirane na istih vozlih. Kar pomeni, da lahko vse "spline functions" enolično predstavimo kot linearno kombinacijo B-zlepkov.
-	\begin{definicija}
-	Rekurzivna formula za B-zlepke:\\
-	$B_{i,k}(x)= \frac{x-t_i}{t_{i+k}-t_i} B_{i,k-1}(x) +  \frac{t_{i+k+1}-x}{t_{i+k+1}-t_{i+1}} B_{i+1,k-1}(x) $
+\begin{frame}{Klasifikacija na B-zlepkih}
+Koncept: Gledati podintervale\\
+Izkaže se, v kolikor kontrolni poligon ustreza določenim omejitvam, da se obliko krivulje uspe prebrati iz kar iz kontrolnega poligona. 
 
-	
-  $B_{i,0}(x) =
-  \begin{cases}
-    1 & \text{; $t_i \le x \le t_{i+1}$} \\
-    0 & \text{;sicer}
-  \end{cases}$
-
-	\end{definicija}
 \end{frame}
 
 \section{}
