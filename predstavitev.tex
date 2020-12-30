@@ -19,8 +19,13 @@
 \usepackage{animate}
 \usepackage{gensymb}
 \usepackage{bold-extra}
+<<<<<<< HEAD
 \usepackage{multirow}
 
+=======
+\usepackage{caption}
+\setbeamertemplate{caption}[numbered]
+>>>>>>> 04f4ad25157d26c72cc1f21b2c3d32c8e845ff70
 \setbeamertemplate{theorems}[numbered] 
 
 
@@ -60,6 +65,22 @@
 \frame{\titlepage} %isto kot begin-end frame
  
 \section{Parametrične kubične krivulje} 
+
+\begin{frame}{Motivacija}
+    \begin{columns}[t]
+	\column{.5\textwidth}
+	\includegraphics[width=0.7\columnwidth]{loop.png}
+	\captionof{figure}{Loop}
+	\includegraphics[width=0.7\columnwidth]{cusp.png}
+	\captionof{figure}{Špica}
+	\column{.5\textwidth}
+	\includegraphics[width=0.7\columnwidth]{prevoj.png}
+	\captionof{figure}{Dva prevoja}
+	\includegraphics[width=0.7\columnwidth]{no_sing.png}
+	\captionof{figure}{Brez prevojev}
+\end{columns}
+\end{frame}
+
 \begin{frame} {Parametrične kubične krivulje}
 
 Kubično parametrični krivuljo definiramo kot:
@@ -168,19 +189,36 @@ Označimo:
 	\end{trditev}
 \end{frame}
 
-\begin{frame}{Hermitska interpolacija}
+\section{B-zlepki}
+\begin{frame}{B-zlepki}
 	
 \end{frame}
 
-\begin{frame}{Klasifikacija}
-	
+\begin{frame}{Primer}
+	\begin{columns}[t]
+		\column{.5\textwidth}
+		\includegraphics[width=0.7\columnwidth]{bloop.png}
+		\captionof{figure}{Loop}
+		\includegraphics[width=0.7\columnwidth]{bcusp.png}
+		\captionof{figure}{Špica}
+		\column{.5\textwidth}
+		\includegraphics[width=0.7\columnwidth]{bprevoj.png}
+		\captionof{figure}{Dva prevoja}
+		\includegraphics[width=0.7\columnwidth]{bno_sing.png}
+		\captionof{figure}{Brez prevojev}
+	\end{columns}
 \end{frame}
+<<<<<<< HEAD
 \section{B-zlepki}
 \begin{frame}{Uvod v B-zlepke}
 	B-zlepki reda n so bazne funkcije za "spline functions" istega reda, definirane na istih vozlih. Kar pomeni, da lahko vse "spline functions" enolično predstavimo kot linearno kombinacijo B-zlepkov.
 	\begin{definicija}
 	Rekurzivna formula za B-zlepke:\\
 	$B_{i,k}(x)= \frac{x-t_i}{t_{i+k}-t_i} B_{i,k-1}(x) +  \frac{t_{i+k+1}-x}{t_{i+k+1}-t_{i+1}} B_{i+1,k-1}(x) $
+=======
+
+\begin{frame}{Definicija B-zlepkov}
+>>>>>>> 04f4ad25157d26c72cc1f21b2c3d32c8e845ff70
 	
   $B_{i,0}(x) =
   \begin{cases}
