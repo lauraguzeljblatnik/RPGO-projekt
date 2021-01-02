@@ -2,7 +2,7 @@ function obmocje = klasifikacijaGP(U,V)
 %UNTITLED funkcija dobi kot vhodni parameter kartezični koordinati U in V
 %Glede na U,V pove ali pripadata območju:
 % N -> no inflexion/cusp/loop
-%S -> an inflexion point
+% S -> an inflexion point
 % D -> two inflexion points
 % C -> cusp
 % L -> loop
