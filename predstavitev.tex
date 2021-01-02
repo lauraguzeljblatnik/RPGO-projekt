@@ -126,7 +126,7 @@ Označimo:
 		Če krivulja \eqref{param} ni premica, bo vsebovala največ eno špico.
 	\end{trditev}
 	\begin{trditev}
-		Potreben in zadosten pogoj, da bo krivulja \eqref{param} bo vsebovala loop (prevod??), je $\Delta <0$.
+		Potreben in zadosten pogoj, da bo krivulja \eqref{param} bo vsebovala zanko, je $\Delta <0$.
 	\end{trditev}
 		
 \end{frame}
@@ -160,7 +160,7 @@ Označimo:
 	Definiramo še $\Delta_1$ kot:
 	\[  \Delta_1= B_1 - 4AC_1 \]
 	\begin{trditev}
-		Potrebni in zadostni pogoji, da bo krivulja \eqref{int} vsebovala loop so:
+		Potrebni in zadostni pogoji, da bo krivulja \eqref{int} vsebovala zanko so:
 		\begin{itemize}
 			\item  $\Delta_1 <0$
 			\item $B^2_1 \geq 3AC_1$ in $B^2_2 \geq 3AC_2$
@@ -206,6 +206,51 @@ Označimo:
 	Če so vsi vozli različni imamo zvezne odvode n-2 reda med vsemi polinomi. V kolikor je r vozlov enakih imamo zagotovljeno le n-r-1 zvezno odvedljivost. 
 	\end{definicija}
 	
+\end{frame}
+
+
+\begin{frame}{Hermitska interpolacija}
+	Ideja: Dani imamo točki $M_0 (0,0)$ in $M_1 (1,0)$ ter tangentna vektorja $M_0A_0$ ij $M_1A_1$. Iščemo parametrično krivuljo, ki bo zadostila naslednjima pogojema:
+	\begin{align*}
+		x(0) &= 0 \quad y(0) = 0 \\
+		x(1) &= 1 \quad y(1) = 0 \\
+	\end{align*}
+in
+	\begin{align*}
+		 \left. \left(\frac{dx}{dt},\frac{dy}{dt}\right)\right|_{t=0} &= M_0A_0 \\
+		\left.\left(\frac{dx}{dt},\frac{dy}{dt}\right)\right|_{t=1} &= M_1A_1
+	\end{align*}
+	 
+\end{frame}
+
+\begin{frame}{Hermitska interpolacija}
+	\begin{center}
+	\includegraphics[width=0.6\columnwidth]{hermit.jpg}
+	\captionof{figure}{Hermitska interpolacija}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Hermitska interpolacija}
+	Označimo:
+	\begin{itemize}
+		\item $ M_0A_0=UM_0M$ in  $M_1A_1 = VM_1M$,
+		kjer je $M$ presečišče vektorjev $M_0A_0$ in $M_1A_1$
+		\item Kot $\alpha =  \angle M_1M_0M$
+		\item $L = |M_0M|$.
+	\end{itemize}
+	Nadalje lahko zaišemo:
+	\[ F_1(t) =L\sin\alpha(3(UV-U-V)t^2 +3U(2-V)t+ U(V-3)) \]
+	
+\end{frame}
+%\begin{frame}{Klasifikacija}
+%	Oblika krivulje je odvisna od vrednosti $U$, $V$.
+%\end{frame}
+
+\begin{frame}{Klasifikacija}
+	\begin{center}
+		\includegraphics[width=0.6\columnwidth]{klas.jpg}
+		\captionof{figure}{Klasifikacija kubičih parametričnih krivulj, glede na vrednosti $U$, $V$}
+	\end{center}
 \end{frame}
 
 \begin{frame}{Uvod v B-zlepke}
