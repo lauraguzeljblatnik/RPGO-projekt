@@ -7,22 +7,21 @@ a1 = [0.6 1]; % 3 4 loop
 T1 = [0 0;
     5 1;
     1 0;
-
     3 4];
 B1 = interpolateBeziere(T1);
 
 t = linspace(0,1,100);
-T = getCoordClick();
-B = interpolateBeziere(T);
+%T = getCoordClick()
+B = interpolateBeziere(T1);
 hold on;
 plotbezier(B,t)
-Tm = moveToOrigin(T);
-BB = moveToOriginBezier(B);
+%Tm = moveToOrigin(T);
+%BB = moveToOriginBezier(B);
 
-Bm =  interpolateBeziere(Tm);
-BBm =interpolateBeziere(BB);
+%Bm =  interpolateBeziere(Tm);
+%BBm =interpolateBeziere(BB);
 %plotbezier(Bm,t);
-plotbezier(BB,t);
+%plotbezier(BB,t);
 
 %moving
 % t00 = [1 1];
