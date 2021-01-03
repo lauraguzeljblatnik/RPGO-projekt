@@ -1,5 +1,5 @@
 % skripta za projekt
-
+% Prvi primer:
 t = linspace(0,1,100);
 
 %poklikamo točke in vektorje
@@ -18,7 +18,7 @@ M3 = T_pop(2,:);
 M4 = T_pop(4,:);
 [U,V] = izracunUV(M1,M2,M3,M4);
 klasifikacijaGP(U,V)
-
+%--------------------------------------
 %primer z zanko
 T1 = [0 0;
     5 1;
