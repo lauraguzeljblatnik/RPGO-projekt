@@ -90,7 +90,7 @@
 
 \begin{frame} {Parametrične kubične krivulje}
 
-Kubično parametrični krivuljo definiramo kot:
+Kubično parametrično krivuljo definiramo kot:
 	\begin{align}
 	\begin{split}
 	x(t) &= a_1t^3+a_2t^2+a_3t+a_4 \\
@@ -142,8 +142,8 @@ Označimo:
 	\end{align}
 	imenovalec v enačbi ukrivljenosti $K$ pa se izraža kot:
 	 \begin{align*}
-	 &\frac{dx}{dt}\frac{d^2y}{dt^2} - \frac{dy}{dt}\frac{d^2x}{dt^2} = 2(A(t-t_2)^2 + B_1(t-t_2) +_2C_1) = \\
-	 &2(A(t-t_3)^2 + B_2(t-t_3) +_2C_2) = 
+	 &\frac{dx}{dt}\frac{d^2y}{dt^2} - \frac{dy}{dt}\frac{d^2x}{dt^2} = 2(A(t-t_2)^2 + B_1(t-t_2) + 2C_1) = \\
+	 &2(A(t-t_3)^2 + B_2(t-t_3) + 2C_2) = 
 	 2F_1(t) \text{,}
 	 \end{align*}
 	 
@@ -190,7 +190,7 @@ Označimo:
 	\begin{trditev}
 		Potrebna in zadostna pogoja, da krivulja \eqref{int} ne bo imela prevojev, sta:
 		\begin{itemize}
-			\item $\Delta_1 \leq 0$ ali $F_1(t_2)F_1(t_2) > 0$
+			\item $\Delta_1 \leq 0$ ali $F_1(t_2)F_1(t_3) > 0$
 			\item $F'_1(t_2)F'_1(t_3)>0$ ali $F_1(t_2)A \leq 0$.
 		\end{itemize}
 	\end{trditev}
@@ -199,8 +199,8 @@ Označimo:
 
 
 
-\begin{frame}{Hermitska interpolacija}
-	Ideja: Dani imamo točki $M_0 (0,0)$ in $M_1 (1,0)$ ter tangentna vektorja $M_0A_0$ ij $M_1A_1$. Iščemo parametrično krivuljo, ki bo zadostila naslednjima pogojema:
+\begin{frame}{Hermitoba interpolacija}
+	Ideja: Dani imamo točki $M_0 (0,0)$ in $M_1 (1,0)$ ter tangentna vektorja $M_0A_0$ in $M_1A_1$. Iščemo parametrično krivuljo, ki bo zadostila naslednjima pogojema:
 	\begin{align*}
 		x(0) &= 0 \quad y(0) = 0 \\
 		x(1) &= 1 \quad y(1) = 0 \\
@@ -213,10 +213,10 @@ in
 	 
 \end{frame}
 
-\begin{frame}{Hermitska interpolacija}
+\begin{frame}{Hermitova interpolacija}
 	\begin{center}
 	\includegraphics[width=0.6\columnwidth]{hermit.jpg}
-	\captionof{figure}{Hermitska interpolacija}
+	\captionof{figure}{Hermitova interpolacija}
 	\end{center}
 \end{frame}
 
