@@ -6,9 +6,9 @@ function B = interpolateBeziere(T)
 % za vhodne točke vrne koordinate kontrolnega poligona
 
 t0 = T(1,:); 
-v0 = T(2,:);
+v0 = T(2,:)-t0;
 t1 = T(3,:);
-v1 = T(4,:);
+v1 = T(4,:)-t1;
 B = zeros(4,2);
 B (1,: ) = t0;
 B (4,:) = t1;
